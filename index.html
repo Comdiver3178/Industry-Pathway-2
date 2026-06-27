@@ -176,7 +176,9 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
     }
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
       color: var(--text);
     }
     h1 {
@@ -421,6 +423,7 @@
     .authority-left,
     .authority-right {
       display: grid;
+      grid-template-rows: auto 390px;
       gap: 18px;
       align-content: start;
     }
@@ -454,23 +457,20 @@
       margin-top: 7px;
     }
     .image-kirby img {
-      height: 390px;
+      height: 100%;
+      min-height: 0;
       object-fit: cover;
       object-position: center;
     }
-    .image-chamber img {
-      height: 390px;
-      object-fit: cover;
-      object-position: center;
-    }
-    /* FORCED LARGE UNDERWATER IMAGE */
+    .image-chamber,
     .image-underwater {
-      height: 390px !important;
-      min-height: 390px !important;
+      height: 390px;
+      min-height: 390px;
     }
+    .image-chamber img,
     .image-underwater img {
-      height: 390px !important;
-      min-height: 390px !important;
+      height: 100%;
+      min-height: 0;
       object-fit: cover;
       object-position: center;
     }
@@ -594,12 +594,20 @@
       .hero-image-card img {
         aspect-ratio: 16 / 9;
       }
-      .image-underwater,
-      .image-underwater img,
+      .authority-left,
+      .authority-right {
+        grid-template-rows: auto;
+      }
+      .image-chamber,
+      .image-underwater {
+        height: auto;
+        min-height: 0;
+      }
+      .image-kirby img,
       .image-chamber img,
-      .image-kirby img {
-        height: auto !important;
-        min-height: 0 !important;
+      .image-underwater img {
+        height: auto;
+        min-height: 0;
         aspect-ratio: auto;
       }
     }
@@ -855,7 +863,12 @@
           <div>Practical insight built on real offshore experience</div>
         </div>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://www.amazon.com/Offshore-Entry-Blueprint-Actually-Commercial-ebook/dp/B0GSJCZPX8" target="_blank" rel="noopener noreferrer">
+          <a
+            class="btn btn-primary"
+            href="https://www.amazon.com/Offshore-Entry-Blueprint-Actually-Commercial-ebook/dp/B0GSJCZPX8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Buy the Book
           </a>
           <a class="btn btn-secondary" href="mailto:matt@mosmaritimegroup.co.nz?subject=Book%20Enquiry">
