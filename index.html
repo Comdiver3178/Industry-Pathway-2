@@ -59,7 +59,7 @@
       background: var(--navy);
       color: var(--white);
       font-size: 14px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .topbar-inner {
@@ -83,7 +83,7 @@
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(255,255,255,0.96);
+      background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--line);
       transition: transform 0.28s ease, opacity 0.28s ease;
@@ -228,7 +228,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
-      align-items: centre;
+      align-items: center;
     }
 
     .btn {
@@ -264,9 +264,8 @@
     }
 
     .hero-image-card img {
-      height: 790px;
+      aspect-ratio: 4 / 5;
       object-fit: cover;
-      object-position: centre;
     }
 
     .hero-info-card {
@@ -287,7 +286,7 @@
 
     .hero-info-top p {
       margin: 0;
-      color: rgba(255,255,255,0.86);
+      color: rgba(255, 255, 255, 0.86);
       font-size: 15px;
     }
 
@@ -455,7 +454,7 @@
     }
 
     .image-chamber img {
-      height: 620px;
+      height: 520px;
       object-fit: cover;
       object-position: center;
     }
@@ -490,8 +489,8 @@
       max-width: 260px;
       margin: 0;
       border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.18);
-      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
     }
 
     .book-cover small {
@@ -510,7 +509,7 @@
 
     .book-cover p {
       margin: 0;
-      color: rgba(255,255,255,0.9);
+      color: rgba(255, 255, 255, 0.9);
     }
 
     .book-points {
@@ -552,8 +551,8 @@
     }
 
     .contact-card {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: 20px;
       padding: 26px;
     }
@@ -575,7 +574,7 @@
 
     footer {
       background: #091a2c;
-      color: rgba(255,255,255,0.82);
+      color: rgba(255, 255, 255, 0.82);
       padding: 26px 0;
       font-size: 14px;
     }
@@ -721,10 +720,7 @@
         </div>
 
         <div class="hero-image-card">
-          <img
-            src="offshore-platform.jpg"
-            alt="Offshore platform at sea"
-          />
+          <img src="offshore-platform.jpg" alt="Offshore platform at sea" />
         </div>
       </div>
     </section>
@@ -818,26 +814,17 @@
           </div>
 
           <div class="image-card image-chamber">
-            <img
-              src="sat-chamber-interior.jpg"
-              alt="Interior corridor of a saturation diving chamber"
-            />
+            <img src="sat-chamber-interior.jpg" alt="Inside a saturation diving chamber" />
           </div>
         </div>
 
         <div class="authority-right">
           <div class="image-card image-kirby">
-            <img
-              src="kirby-helmet-close.jpg"
-              alt="Kirby Morgan commercial diving helmet close-up"
-            />
+            <img src="kirby-helmet-close.jpg" alt="Kirby helmet close up" />
           </div>
 
           <div class="image-card image-underwater">
-            <img
-              src="underwater-valve-work.jpg"
-              alt="Commercial diver carrying out underwater valve work"
-            />
+            <img src="underwater-valve-work.jpg" alt="Underwater valve work" />
           </div>
         </div>
       </div>
@@ -846,10 +833,7 @@
     <section class="book-strip" id="book">
       <div class="container book-grid">
         <div class="book-cover">
-          <img
-            src="Book%20cover.1.png"
-            alt="The Offshore Entry Blueprint book cover"
-          />
+          <img src="Book%20cover.1.png" alt="The Offshore Entry Blueprint book cover" />
 
           <div>
             <small>Book</small>
@@ -883,6 +867,7 @@
               href="https://www.amazon.com/Offshore-Entry-Blueprint-Actually-Commercial-ebook/dp/B0GSJCZPX8"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Buy the book"
             >
               Buy the Book
             </a>
