@@ -386,7 +386,7 @@
 
     .authority-wrap {
       display: grid;
-      grid-template-columns: 1fr 0.95fr;
+      grid-template-columns: 1.05fr 0.95fr;
       gap: 24px;
       align-items: start;
     }
@@ -404,7 +404,6 @@
       border-radius: 24px;
       padding: 30px;
       box-shadow: var(--shadow);
-      align-self: start;
     }
 
     .authority-panel h3,
@@ -428,27 +427,31 @@
 
     .image-card {
       background: #0b1623;
+      overflow: hidden;
     }
 
     .image-card img {
       width: 100%;
-      object-fit: cover;
-    }
-
-    .image-standard img {
-      aspect-ratio: 16 / 10;
+      display: block;
     }
 
     .image-kirby img {
-      width: 100%;
-      aspect-ratio: auto;
+      height: 520px;
       object-fit: contain;
+      object-position: center;
       background: #0b1623;
     }
 
-    .image-chamber img {
-      aspect-ratio: 4 / 5;
+    .image-underwater img {
+      height: 360px;
       object-fit: cover;
+      object-position: center;
+    }
+
+    .image-chamber img {
+      height: 520px;
+      object-fit: cover;
+      object-position: center;
     }
 
     .book-strip {
@@ -599,8 +602,11 @@
       }
 
       .hero-image-card img,
-      .image-chamber img {
-        aspect-ratio: 16 / 10;
+      .image-underwater img,
+      .image-chamber img,
+      .image-kirby img {
+        height: auto;
+        aspect-ratio: auto;
       }
     }
 
@@ -789,7 +795,7 @@
             <img src="kirby-helmet-close.jpg" alt="Kirby helmet close up" />
           </div>
 
-          <div class="image-card image-standard">
+          <div class="image-card image-underwater">
             <img src="underwater-valve-work.jpg" alt="Underwater valve work" />
           </div>
         </div>
